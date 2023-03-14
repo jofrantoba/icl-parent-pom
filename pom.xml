@@ -17,8 +17,9 @@
         <version.junit-vintage-engine>5.8.0-M1</version.junit-vintage-engine>
         <version.hamcrest-library>2.2</version.hamcrest-library>
         <version.mockito-all>2.0.2-beta</version.mockito-all>  
-        <version.maven-surefire-plugin>3.0.0-M5</version.maven-surefire-plugin> 
-        <version.logback-classic>1.2.9</version.logback-classic>         
+        <version.maven-surefire-plugin>3.0.0-M5</version.maven-surefire-plugin>              
+        <version.slf4j-api>1.7.32</version.slf4j-api>
+        <version.slf4j-simple>1.7.30</version.slf4j-simple>
     </properties>
     <dependencies>
         <dependency>
@@ -65,11 +66,16 @@
             <artifactId>mockito-all</artifactId>
             <version>${version.mockito-all}</version>     
             <scope>test</scope>
-        </dependency> 
+        </dependency>         
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>${version.logback-classic}</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${version.slf4j-api}</version>
+        </dependency>        
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${version.slf4j-simple}</version>
         </dependency>
     </dependencies>    
     <build>
