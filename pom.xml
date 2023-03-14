@@ -11,14 +11,12 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <version.lombok>1.18.22</version.lombok>
         <version.apm-agent-attach>1.33.0</version.apm-agent-attach>
-        <version.apm-agent-api>1.33.0</version.apm-agent-api>
-        <version.spring-context>5.3.14</version.spring-context>
+        <version.apm-agent-api>1.33.0</version.apm-agent-api>        
         <version.junit-platform-launcher>1.8.0-M1</version.junit-platform-launcher>
         <version.junit-jupiter-engine>5.8.0-M1</version.junit-jupiter-engine>
         <version.junit-vintage-engine>5.8.0-M1</version.junit-vintage-engine>
         <version.hamcrest-library>2.2</version.hamcrest-library>
-        <version.mockito-all>2.0.2-beta</version.mockito-all>
-        <version.spring-test>5.3.5</version.spring-test>    
+        <version.mockito-all>2.0.2-beta</version.mockito-all>  
         <version.maven-surefire-plugin>3.0.0-M5</version.maven-surefire-plugin> 
         <version.logback-classic>1.2.9</version.logback-classic>         
     </properties>
@@ -37,12 +35,7 @@
             <groupId>co.elastic.apm</groupId>
             <artifactId>apm-agent-api</artifactId>
             <version>${version.apm-agent-api}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${version.spring-context}</version>              
-        </dependency>
+        </dependency>        
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
@@ -72,14 +65,7 @@
             <artifactId>mockito-all</artifactId>
             <version>${version.mockito-all}</version>     
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${version.spring-test}</version>
-            <scope>test</scope>
-            <type>jar</type>
-        </dependency>   
+        </dependency> 
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
